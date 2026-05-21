@@ -4,9 +4,9 @@ import { useRef, useState } from "react";
 import { Button, Image, ScrollView, Text, View } from "react-native";
 
 export default function HomeScreen() {
-  const [permission, requestPermission] = useCameraPermissions();
-  const [foto, setFoto] = useState<string | null>(null);
-  const [localizacao, setLocalizacao] = useState<string>("Não capturada");
+    const [permission, requestPermission] = useCameraPermissions();
+    const [foto, setFoto] = useState<string | null>(null);
+    const [localizacao, setLocalizacao] = useState<string>("Não capturada");
 
   const cameraRef = useRef<any>(null);
 
